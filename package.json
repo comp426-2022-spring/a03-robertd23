@@ -1,0 +1,24 @@
+{
+  "name": "a03-robertd23",
+  "version": "1.0.0",
+  "description": "a3",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js --port=5555"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/comp426-2022-spring/a03-robertd23.git"
+  },
+  "author": "",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/comp426-2022-spring/a03-robertd23/issues"
+  },
+  "homepage": "https://github.com/comp426-2022-spring/a03-robertd23#readme",
+  "dependencies": {
+    "curl": "^0.1.4",
+    "express": "^4.18.0",
+    "minimist": "^1.2.6"
+  }
+}

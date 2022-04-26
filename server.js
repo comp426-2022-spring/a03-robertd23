@@ -91,7 +91,7 @@ app.get('/app/flip/', (req, res) => {
 app.get('/app/flips/:number', (req, res) => {
     let flipper = coinFlips(req.params.number);
     let counter = countFlips(flipper);
-    res.status(200).json({"raw": flipper, "summary" : countFlips(flipper)})
+    res.status(200).json({"raw": flipper, "summary" : counter})
 });
 //app.get('/app/flips/call/heads', (req, res) => {
 //    var val = flipACoin('heads');

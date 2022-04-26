@@ -95,11 +95,11 @@ app.get('/app/flips/:number', (req, res) => {
 });
 app.get('/app/flips/call/heads', (req, res) => {
     var flipper = flipACoin(req.params.number)
-    res.status(200).json(flipper)
+    res.status(200).json(flipACoin('heads'))
 });
 app.get('/app/flips/call/tails', (req, res) => {
     var flipper = flipACoin(req.params.number)
-    res.status(200).json(flipper)
+    res.status(200).json(flipACoin('tails'))
 	//Some
 	//expressions
 	//go

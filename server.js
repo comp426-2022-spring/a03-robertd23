@@ -103,7 +103,8 @@ app.get('/app/flips/:number', (req, res) => {
 //});
 
 app.get('/app/flips/call/:hort', (req, res) => {
-    res.stat(200).json(flipACoin(req.params.hort));
+    let flippest = flipACoin(req.params.hort);
+    res.status(200).json(flippest);
 });
 
 // Default response for any other request

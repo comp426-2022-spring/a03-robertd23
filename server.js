@@ -93,13 +93,17 @@ app.get('/app/flips/:number', (req, res) => {
     let counter = countFlips(flipper);
     res.status(200).json({"raw": flipper, "summary" : countFlips(flipper)})
 });
-app.get('/app/flips/call/heads', (req, res) => {
-    var val = flipACoin('heads');
-    res.stat(200).json(val)
-});
-app.get('/app/flips/call/tails', (req, res) => {
-    var val = flipACoin('tails');
-    res.stat(200).json(val)
+//app.get('/app/flips/call/heads', (req, res) => {
+//    var val = flipACoin('heads');
+//    res.stat(200).json(val)
+//});
+//app.get('/app/flips/call/tails', (req, res) => {
+//    var val = flipACoin('tails');
+//    res.stat(200).json(val)
+//});
+
+аpp.get('/app/flips/call/:hort', (req, res) => {
+    res.stat(200).json(flipACoin(req.params.hort));
 });
 
 // Default response for any other request

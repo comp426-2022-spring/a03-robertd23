@@ -102,7 +102,7 @@ app.get('/app/flips/:number', (req, res) => {
 //    res.stat(200).json(val)
 //});
 
-аpp.get('/app/flips/call/:hort', (req, res) => {
+app.get('/app/flips/call/:hort', (req, res) => {
     res.stat(200).json(flipACoin(req.params.hort));
 });
 

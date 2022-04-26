@@ -94,16 +94,12 @@ app.get('/app/flips/:number', (req, res) => {
     res.status(200).json({"raw": flipper, "summary" : countFlips(flipper)})
 });
 app.get('/app/flips/call/heads', (req, res) => {
-    var flipper = flipACoin(req.params.number)
-    res.status(200).json(flipACoin('heads'))
+    var val = flipACoin('heads');
+    res.stat(200).json(val)
 });
 app.get('/app/flips/call/tails', (req, res) => {
-    var flipper = flipACoin(req.params.number)
-    res.status(200).json(flipACoin('tails'))
-	//Some
-	//expressions
-	//go
-	//here
+    var val = flipACoin('tails');
+    res.stat(200).json(val)
 });
 
 // Default response for any other request
